@@ -4,7 +4,7 @@ from database import init_db, add_sleep, get_stats
 from logic import calculate_stats, validate_time
 
 conn = init_db()
-bot = telebot.TeleBot("7913448899:AAG_naSZlVR9Rk2JTOtSfRfLDYboeRmN9tI")
+bot = telebot.TeleBot("")
 
 user_states = {}
 
@@ -52,4 +52,5 @@ def text_handler(message):
 
 if __name__ == '__main__':
     print("Бот запущен!")
+
     bot.polling()
